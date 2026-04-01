@@ -5,15 +5,16 @@ The PyhHaze dataset can be downloaded here:https://drive.google.com/file/d/1hABP
 - **Spatial resolution**：480×640
 - **Scene coverage**：Typical remote sensing scenes such as urban, mountain, water, vegetation and buildings
 - **Fog concentration distribution**：The three levels of light fog, medium fog and thick fog are consistent with the fog distribution law of real remote sensing imaging
-## 📁 Dataset directory structure
+- **Dataset directory structure**
 ```markdown
-Directory: PhyHaze/
-├── train/          # 训练集
-│   ├── gt/         # 训练集清晰无雾图像（Ground Truth）
-│   └── hazy/       # 训练集对应有雾遥感图像
-└── test/           # 测试集
-    ├── gt/         # 测试集清晰无雾图像
-    └── hazy/       # 测试集对应有雾遥感图像
+PhyHaze/
+├── train/         
+│   ├── gt/         
+│   └── hazy/      
+└── test/          
+    ├── gt/         
+    └── hazy/     
+```
 ## 📈 Experimental results
 ### Comparison of the generalization ability of the dataset on CUHK-CR2
 我们在3个遥感去雾数据集（DHID、LHID、PhyHaze）上，对7种主流去雾模型进行了全面的定量评估，涵盖**全参考指标（PSNR、SSIM、LPIPS、SAM）**与**无参考指标（BRISQUE）**。
