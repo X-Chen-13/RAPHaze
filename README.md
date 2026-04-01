@@ -43,8 +43,9 @@ PhyHaze/
 | DehazeSNN       | DHID    | 10.223   | 0.417   | 0.440   | 0.089   | 0.205    |
 |                 | LHID    | **12.627** | **0.480** | 0.407   | **0.069** | **0.187** |
 |                 | PhyHaze | 12.024   | 0.483   | 0.401   | 0.079   | 0.194    |
-
-## Quantitative comparison of geostatistical metrics
+### Visual comparison of dehazing effect
+![去雾效果对比图](./assets/Qualitative_comparisons3.png)
+### Quantitative comparison of geostatistical metrics
 | Metric | PhyH. | DHID | LHID | CUHK | RRSHID | T-cloud. | RICE |
 |--------|-------|------|------|------|--------|----------|------|
 | Moran's I | 0.849 | 0.829 | 0.729 | 0.856 | 0.887 | 0.862 | 0.813 |
