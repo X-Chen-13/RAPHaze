@@ -52,3 +52,14 @@ We conduct a comprehensive quantitative evaluation of seven mainstream dehazing 
 |--------|-------|------|------|------|--------|----------|------|
 | Moran's I | 0.849 | 0.829 | 0.729 | 0.856 | 0.887 | 0.862 | 0.813 |
 | Spatial Range | 26.15 | 22.51 | 22.91 | 26.75 | 28.13 | 26.57 | 25.86 |
+## Test
+### Fog mask extraction
+Parameter description: - current_block_size: Determines the reference range used when "detecting fog". - current_blur_sigma: Determines the smoothness of the fog; the larger the value, the stronger the effect. - current_sensitivity: The determined concentration of fog.
+```markdown
+python extract_fog.py   
+```
+### Add fog simulation
+Parameter description:- clean_image_path: Path of the original image without fog. - mask_path: Path of the fog mask. - output_path: Path for saving the result. - fog_color: Color of the fog (B, G, R). - intensity: Coefficient of fog intensity (0.0 - ∞)
+```markdown
+python add_fog.py   
+```
